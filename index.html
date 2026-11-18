@@ -214,13 +214,13 @@ const colours = [
   "#9d4dff"
 ];
 
-// Click Me shows the popup only
-clickMe.addEventListener("click", () => {
+// Tap shows the popup only
+Tap.addEventListener("Tap", () => {
   popup.style.display = "flex";
 });
 
 // OK closes popup and starts game
-okButton.addEventListener("click", () => {
+okButton.addEventListener("Tap", () => {
   popup.style.display = "none";
   game.style.display = "block";
   startGame();
@@ -354,17 +354,17 @@ function endGame() {
   document.getElementById("finalScore").textContent = score;
 
   document.getElementById("result").textContent =
-    score >= 300 ? "🏆 Bubble Master!" :
-    score >= 150 ? "🔥 Great Playing!" :
+    score >= 300 ? "🏆 ahh bahi superrrrr !" :
+    score >= 150 ? "🔥 meru thopluu!" :
     "💜 Nice Try! Keep Practising!";
 
-  document.getElementById("gameOver").style.display = "flex";
+  document.getElementById("ata aipoindi bossuu").style.display = "flex";
   document.getElementById("message").textContent =
     "Game finished!";
 }
 
-document.getElementById("restart").addEventListener(
-  "click", startGame
+document.getElementById("malli adudaama").addEventListener(
+  "Tap", startGame
 );
 </script>
 
