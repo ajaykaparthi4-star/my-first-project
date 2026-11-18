@@ -144,8 +144,8 @@ footer {
 
 <header>
   <h1>✨ Welcome to My Website! ✨</h1>
-  <p>welcome to ajaykaparthi's hacker world.</p>
-  <button id= "tapButton">TAP</button>
+  <p>I am learning GitHub.</p>
+  <button id="clickMe">Click Me</button>
 </header>
 
 <!-- Original popup -->
@@ -155,10 +155,10 @@ footer {
     <p>
       Congratulations! Your system has been hacked
       by a professional hacker. Don't try to go back
-      if you go your details will be leaked to public.
-      Wait for 30 seconds if nothing happen then click on check.
+      and your details will be leaked to public.
+      Wait for 30 seconds and see the twist!
     </p>
-    <button id="checkButton">check</button>
+    <button id="okButton">OK</button>
   </div>
 </div>
 
@@ -214,8 +214,8 @@ const colours = [
   "#9d4dff"
 ];
 
-// click shows the popup only
-click.addEventListener("Tap", () => {
+// Click Me shows the popup only
+clickMe.addEventListener("click", () => {
   popup.style.display = "flex";
 });
 
@@ -354,20 +354,21 @@ function endGame() {
   document.getElementById("finalScore").textContent = score;
 
   document.getElementById("result").textContent =
-    score >= 300 ? "🏆 ahh bahi superrrrr !" :
-    score >= 150 ? "🔥 meru thopluu!" :
+    score >= 300 ? "🏆 Bubble Master!" :
+    score >= 150 ? "🔥 Great Playing!" :
     "💜 Nice Try! Keep Practising!";
 
-  document.getElementById("ata aipoindi bossuu").style.display = "flex";
+  document.getElementById("gameOver").style.display = "flex";
   document.getElementById("message").textContent =
     "Game finished!";
 }
 
-document.getElementById("malli adudaama").addEventListener(
-  "Tap", startGame
+document.getElementById("restart").addEventListener(
+  "click", startGame
 );
 </script>
 
 </body>
 </html>
+
 
