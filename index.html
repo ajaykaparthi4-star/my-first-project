@@ -214,13 +214,13 @@ const colours = [
   "#9d4dff"
 ];
 
-// Tap shows the popup only
-Tap.addEventListener("Tap", () => {
+// click shows the popup only
+click.addEventListener("Tap", () => {
   popup.style.display = "flex";
 });
 
 // OK closes popup and starts game
-okButton.addEventListener("Tap", () => {
+okButton.addEventListener("click", () => {
   popup.style.display = "none";
   game.style.display = "block";
   startGame();
