@@ -143,9 +143,9 @@ footer {
 <body>
 
 <header>
-  <h1>✨ Welcome to heaven! ✨</h1>
-  <p>Welcome to ajaykaparthi's hacker world.</p>
-  <button id="tap">Tap</button>
+  <h1>✨ Welcome to Heaven! ✨</h1>
+  <p>Welcome to Ajaykaparthi's hacker world.</p>
+  <button id="clickMe">Click Me</button>
 </header>
 
 <!-- Original popup -->
@@ -157,6 +157,8 @@ footer {
       by a professional hacker. Don't try to go back
       if you go your details will be leaked to public.
       then i am not responsible for the cause.Just wait for 30seconds if there is no response then click on ok then see the twist
+
+
     </p>
     <button id="okButton">OK</button>
   </div>
@@ -170,7 +172,7 @@ footer {
 
   <div class="stats">
     <div>🏆 Score: <span id="score">0</span></div>
-    <div>⏰ Time: <span id="time">30</span>s</div>
+    <div>⏰ Time: <span id="time">45</span>s</div>
     <div>🔥 Combo: <span id="combo">0</span></div>
   </div>
 
@@ -187,7 +189,7 @@ footer {
 
 </section>
 
-<footer>Made with VA studio </footer>
+<footer>Made with ❤️ by Me</footer>
 
 <script>
 const clickMe = document.getElementById("clickMe");
@@ -197,7 +199,7 @@ const game = document.getElementById("game");
 const arena = document.getElementById("arena");
 
 let score = 0;
-let time =30 ;
+let time = 45;
 let combo = 0;
 let running = false;
 let timerInterval = null;
@@ -354,8 +356,8 @@ function endGame() {
   document.getElementById("finalScore").textContent = score;
 
   document.getElementById("result").textContent =
-    score >= 300 ? "🏆 super bosuuuuu nuv!" :
-    score >= 150 ? "🔥 chala baga try chesav gaaaa party leda mari!" :
+    score >= 300 ? "🏆 super bosssuu!" :
+    score >= 150 ? "🔥 eyyyuuu dawat ivali ika!" :
     "💜 Nice Try! Keep Practising!";
 
   document.getElementById("gameOver").style.display = "flex";
